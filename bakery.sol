@@ -11,12 +11,10 @@ contract Bakery {
     bool public isOvenOn;
     uint public lastBreadSize;
 
-    // Événements pour signaler les actions
     event BakeryOpened(bool state);
     event OvenToggled(bool state);
     event BreadSold(uint size);
 
-    // Constructeur pour initialiser l'état de la boulangerie
     constructor() {
         isBakeryOpen = false;
         isOvenOn = false;
