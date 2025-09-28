@@ -27,7 +27,7 @@ contract Bakery {
         emit BakeryOpened(isBakeryOpen);
     }
 
-    // Fonction pour allumer ou éteindre le four
+    // Fonction pour allumer ou éteindre le four important
     function toggleOven() public {
         require(isBakeryOpen, "La boulangerie doit etre ouverte pour allumer le four.");
         isOvenOn = !isOvenOn;
